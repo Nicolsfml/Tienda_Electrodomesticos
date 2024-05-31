@@ -22,8 +22,10 @@ public class Main {
         System.out.println(tvConSeguro.operacion());
 
         System.out.println("\n ***Singleton***");
-        Administrador admin = Administrador.getInstancia();
-        System.out.println(admin.toString());
+        AdministradorLG adminLG = AdministradorLG.getInstancia();
+        System.out.println(adminLG.toString());
+        AdministradorSamsung adminSamsung = AdministradorSamsung.getInstancia();
+        System.out.println(adminSamsung.toString());
 
         System.out.println("\n ***Prototype***");
         PrototypeFactory licuadoraFactory = new PrototypeFactory(licuadora);
